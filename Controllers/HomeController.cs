@@ -33,5 +33,25 @@ namespace url_referrer_in_asp_net_core.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult Home()
+        {
+            return View();
+        }
+
+        public IActionResult Teacher()
+        {
+            return View();
+        }
+
+        public IActionResult DetailsPage()
+        {
+            return View();
+        }
     }
 }
