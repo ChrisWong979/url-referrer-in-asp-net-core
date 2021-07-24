@@ -36,7 +36,7 @@ namespace url_referrer_in_asp_net_core.Controllers
 
         public IActionResult Dashboard()
         {
-            return Redirect("/Home/DetailsPage");
+            return View();
         }
 
         public IActionResult Home()
