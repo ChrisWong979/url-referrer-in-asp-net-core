@@ -4,5 +4,8 @@
 
 <div class="text-center">
     <h1 class="display-4">Teacher</h1>
-    <a asp-controller="Home" asp-action="DetailsPage">DetailsPage</a>
+    @{
+        var parms = new Dictionary<string, string> { { "from", Context.Request.Path } };
+    }
+    <a asp-controller="Home" asp-action="DetailsPage" asp-all-route-data="parms">DetailsPage</a>
 </div>

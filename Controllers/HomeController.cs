@@ -49,7 +49,7 @@ namespace url_referrer_in_asp_net_core.Controllers
             return View();
         }
 
-        public IActionResult DetailsPage()
+        public IActionResult DetailsPage(string from)
         {
             return View();
         }
